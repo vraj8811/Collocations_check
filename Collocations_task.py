@@ -1,7 +1,9 @@
+#importing important library
 from nltk import FreqDist
 import re
 from nltk.corpus import wordnet as wn
 
+#main part of program
 synset = set()
 synset_say = wn.synsets("say")
 all_say =[]
@@ -13,6 +15,7 @@ all_say = [j for i in all_say for j in i]
 
 say_synset = set(all_say)
 
+#open file in write mode
 with open(r"C:\PyCharmGrammarly\Grammarly\say_synset.txt", "w") as file:
     for i in say_synset:
         file.write(i)
