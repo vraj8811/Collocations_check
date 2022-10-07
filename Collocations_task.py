@@ -1,4 +1,4 @@
-#importing important library
+#importing important libraires' 
 from nltk import FreqDist
 import re
 from nltk.corpus import wordnet as wn
@@ -15,10 +15,10 @@ all_say = [j for i in all_say for j in i]
 
 say_synset = set(all_say)
 
-#open file in write mode
+#open file with write permission 
 with open(r"C:\PyCharmGrammarly\Grammarly\say_synset.txt", "w") as file:
-    for i in say_synset:
-        file.write(i)
+    for j in say_synset:
+        file.write(j)
         file.write("\n")
 
 import spacy
@@ -56,6 +56,6 @@ with open(r"C:\git_project\summer-school-2019\classes\5_syntax\task-collocations
 
 
 
-
+#end of the code
 
 
